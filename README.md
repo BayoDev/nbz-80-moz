@@ -1,6 +1,8 @@
 # <div align='center'> MO-Z replica</div>
 
-:warning: This is not fully working and the documentation is a work in progress :warning:
+<div align='center'> 
+
+:warning: This is not fully working and the documentation is a work in progress :warning: </div>
 
 This is a system monitor and debugger for the SGS ATES NBZ-80-S computer. The original monitor software (MO-Z) is not currently available so I decided to create a replica (freely) based on the original documentation.
 
@@ -8,7 +10,7 @@ The original MO-Z was intended for the CLZ-80 board as a replacement for the NC-
 
 1. [My configuration](#conf)
 2. [Usage](#usage)
-3. [Usage](#sources)
+3. [Sources](#sources)
 
 <a id='conf'></a>
 
@@ -16,9 +18,9 @@ The original MO-Z was intended for the CLZ-80 board as a replacement for the NC-
 
 This software was originally developed on a machine with the following specs:
 
-    - 16k ram
-    - 8k rom partition (56~64k of the memory space, 2k eprom for each slot)
-    - RS232 transmission line (600 baud)
+- 16k ram
+- 8k rom partition (56~64k of the memory space, 2k eprom for each slot)
+- RS232 transmission line (600 baud)
 
 Check the original schematics for jumper configuration.
 
@@ -56,9 +58,24 @@ Once the machine is powered on you need to load the value 0xF001 in the PC and p
 
 ## Commands
 
-The commands are very similiar
+For the commands refer back to https://archive.org/details/clz80.
 
-> TODO
+### Implementation status
+
+> :heavy_check_mark: = Fully implemented, :warning: = Partially implemented ,:x: = Not implemented
+
+- (:heavy_check_mark:) "O" Open memory mode
+- (:heavy_check_mark:) "R" Register mode    
+- (:heavy_check_mark:) "P" Proceed
+- (:heavy_check_mark:) "B" Breakpoint repeat
+- (:warning:) "S-" Single step
+- (:warning:) "Tn" Trace steps
+- (:warning:) "L" Serial load
+- (:x:) "H" Parallel load
+- (:x:) "C" Cassette load
+- (:x:) "D" Dump
+- (:x:) "A" Start assembler
+- (:x:) "E" Start editor
 
 <a id='sources'></a>
 
