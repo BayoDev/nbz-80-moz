@@ -253,6 +253,8 @@ main:
 
 
             ; "RETURN"
+            cp a,asc_CR
+            jp z,.startOMMreturn
             cp a,asc_BACKSPACE
             jp nz,.endOMMreturn
             .startOMMreturn:
@@ -400,6 +402,8 @@ main:
         jp nz,.endOMMnewBR
         .startOMMnewBR:
             ld c,asc_C
+            call serialOut
+            
             ld hl,(CURRENT_MEMORY_ADDR_L)
             call setBreakpoint
             ld HL,(BR_PC)
@@ -771,7 +775,7 @@ main:
 
 ;========================================
 ;
-;           AUSILIARY FUNCTIONS
+;           AUXILIARY FUNCTIONS
 ;
 ;========================================
 
@@ -1062,6 +1066,8 @@ readHex:
     ld a,c
     cp asc_BACKSPACE
     jp z, .postBanner
+    cp asc_CR
+    jp z, .postBanner
 readHexSkipFirst:
     call asciiToHex
     ld a,e
@@ -1175,6 +1181,7 @@ breakpointReturn:
 
     call printRegistersTrace
 
+    ld a,(MULTI_STEPS_COUNT)
     cp $00
     jp z,.postBanner
 
