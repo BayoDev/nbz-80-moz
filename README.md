@@ -79,7 +79,7 @@ For the commands refer back to https://archive.org/details/clz80.
 
 ## Notes on the "L" command
 
-In my implementation of the "L" command the data is loaded starting at 0x0200 and the program will stop loading when it encounter three ";" symbols (0x3B 0x3B 0x3B)
+In my implementation of the "L" command the data is loaded starting at 0x0200 and the program will stop loading when it encounters three ";" symbols (0x3B 0x3B 0x3B)
 
 <a id='sources'></a>
 
