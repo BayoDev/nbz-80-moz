@@ -1,6 +1,6 @@
 # <div align='center'> MO-Z replica</div>
 
-# ⚠️ The original software is now recovered! This may still be helpful for use wihtout an 8251 ic installed ⚠️
+# ⚠️ The original software is now recovered! This may still be helpful for use without an 8251 ic installed ⚠️
 
 <div align='center'> 
 
