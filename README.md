@@ -66,18 +66,18 @@ For the commands refer back to https://archive.org/details/clz80.
 
 > :heavy_check_mark: = Fully implemented, :warning: = Partially implemented ,:x: = Not implemented
 
-- (:heavy_check_mark:) "O" Open memory mode
-- (:heavy_check_mark:) "R" Register mode    
-- (:heavy_check_mark:) "P" Proceed
-- (:heavy_check_mark:) "B" Breakpoint repeat
-- (:warning:) "S" Single step
-- (:warning:) "Tn" Trace steps
-- (:warning:) "L" Serial load
-- (:x:) "H" Parallel load
-- (:x:) "C" Cassette load
-- (:x:) "D" Dump
-- (:x:) "A" Start assembler
-- (:x:) "E" Start editor
+- ( :heavy_check_mark: ) "O" Open memory mode
+- ( :heavy_check_mark: ) "R" Register mode    
+- ( :heavy_check_mark: ) "P" Proceed
+- ( :heavy_check_mark: ) "B" Breakpoint repeat
+- ( :warning: ) "S" Single step
+- ( :warning: ) "Tn" Trace steps
+- ( :warning: ) "L" Serial load
+- ( :x: ) "H" Parallel load
+- ( :x: ) "C" Cassette load
+- ( :x: ) "D" Dump
+- ( :x: ) "A" Start assembler
+- ( :x: ) "E" Start editor
 
 ## Notes on the "L" command
 
